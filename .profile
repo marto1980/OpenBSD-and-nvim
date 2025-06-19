@@ -5,7 +5,7 @@
 PATH=$HOME/.local/share/nvim/mason/bin:$HOME/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin
 export PATH HOME TERM
 
-export NVM_DIR="$HOME/.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-set -o vi
+if [ -f ~/.kshrc ]; then
+    export ENV="$HOME/.kshrc"
+    . ~/.kshrc
+fi
