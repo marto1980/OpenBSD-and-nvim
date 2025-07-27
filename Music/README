@@ -1,0 +1,5 @@
+To download a youtube video:
+ ./yt-dlp -x --audio-format mp3 -o "./chitalishte/RomanoVogi.%(ext)s" https://www.youtube.com/watch?v=A0-XPQmcAOQ
+
+To cut an mp4 file:
+ffmpeg -i input.mp4 -ss 00:01:00 -to 00:02:30 -c copy output.mp4
